@@ -8,7 +8,7 @@ const Convenience = Me.imports.convenience;
 
 let _;
 
-class Window3SplitExtension {
+class UltraWideSnapperTwoThirdsExtension {
     constructor() {
         this._settings = null;
         this._keybindings = [];
@@ -340,7 +340,7 @@ class Window3SplitExtension {
 let extension = null;
 
 function init() {
-    return new Window3SplitExtension();
+    return new UltraWideSnapperTwoThirdsExtension();
 }
 
 function enable() {
