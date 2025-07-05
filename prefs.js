@@ -22,7 +22,7 @@ function buildPrefsWidget() {
         margin_end: 20,
     });
 
-    // タイトル
+    // Title section
     let titleLabel = new Gtk.Label({
         label: '<b>' + _('Keyboard Shortcut Settings') + '</b>',
         use_markup: true,
@@ -30,7 +30,7 @@ function buildPrefsWidget() {
     });
     widget.append(titleLabel);
 
-    // 説明
+    // Description section
     let descLabel = new Gtk.Label({
         label: _('Configure shortcut keys for each function'),
         halign: Gtk.Align.START,
@@ -38,7 +38,7 @@ function buildPrefsWidget() {
     });
     widget.append(descLabel);
 
-    // 各キーバインディングの設定
+    // Keybinding configuration settings
     let keybindings = [
         {key: 'left-two-thirds', label: _('Left 2/3'), desc: _('Place window on the left side with 2/3 width')},
         {key: 'right-two-thirds', label: _('Right 2/3'), desc: _('Place window on the right side with 2/3 width')},
@@ -50,6 +50,25 @@ function buildPrefsWidget() {
         let row = createKeybindingRow(settings, binding.key, binding.label, binding.desc);
         widget.append(row);
     });
+
+    // Debug settings section
+    let debugSeparator = new Gtk.Separator({
+        orientation: Gtk.Orientation.HORIZONTAL,
+        margin_top: 20,
+        margin_bottom: 10,
+    });
+    widget.append(debugSeparator);
+
+    let debugTitleLabel = new Gtk.Label({
+        label: '<b>' + _('Debug Settings') + '</b>',
+        use_markup: true,
+        halign: Gtk.Align.START,
+    });
+    widget.append(debugTitleLabel);
+
+    let debugRow = createDebugRow(settings);
+    widget.append(debugRow);
+
     return widget;
 }
 
@@ -60,7 +79,7 @@ function createKeybindingRow(settings, key, label, description) {
         margin_bottom: 10,
     });
 
-    // ラベル部分
+    // Label section
     let labelBox = new Gtk.Box({
         orientation: Gtk.Orientation.VERTICAL,
         spacing: 2,
@@ -82,28 +101,28 @@ function createKeybindingRow(settings, key, label, description) {
     labelBox.append(titleLabel);
     labelBox.append(descLabel);
 
-    // ショートカット表示
+    // Shortcut display
     let shortcutLabel = new Gtk.Label({
         halign: Gtk.Align.END,
         valign: Gtk.Align.CENTER,
     });
 
-    // 設定ボタン
+    // Settings button
     let button = new Gtk.Button({
         label: _('Set'),
         valign: Gtk.Align.CENTER,
     });
 
-    // 現在の設定を表示
+    // Display current settings
     updateShortcutLabel(settings, key, shortcutLabel);
 
-    // ボタンクリック時の処理
+    // Button click event handler
     button.connect('clicked', () => {
         console.log(`Button clicked for key: ${key}`);
         showKeybindingDialog(button, settings, key, shortcutLabel);
     });
 
-    // 設定変更時の処理
+    // Settings change event handler
     settings.connect(`changed::${key}`, () => {
         updateShortcutLabel(settings, key, shortcutLabel);
     });
@@ -128,11 +147,11 @@ function showKeybindingDialog(parent, settings, key, label) {
     console.log(`showKeybindingDialog called for key: ${key}`);
     
     try {
-        // 親ウィンドウを取得（GTK 4対応）
+        // Get parent window (GTK 4 compatible)
         let parentWindow = parent.get_root();
         console.log(`Parent window: ${parentWindow}`);
         
-        // より安全なダイアログ作成
+        // Create safer dialog
         let dialog = new Gtk.Window({
             title: _('Set Shortcut Key'),
             transient_for: parentWindow,
@@ -142,7 +161,7 @@ function showKeybindingDialog(parent, settings, key, label) {
         });
         console.log(`Dialog created: ${dialog}`);
 
-        // ダイアログのコンテンツを作成
+        // Create dialog content
         let box = new Gtk.Box({
             orientation: Gtk.Orientation.VERTICAL,
             spacing: 12,
@@ -164,7 +183,7 @@ function showKeybindingDialog(parent, settings, key, label) {
         });
         box.append(shortcutLabel);
 
-        // ボタンボックス
+        // Button box
         let buttonBox = new Gtk.Box({
             orientation: Gtk.Orientation.HORIZONTAL,
             spacing: 6,
@@ -192,7 +211,7 @@ function showKeybindingDialog(parent, settings, key, label) {
 
         let newShortcut = '';
 
-        // GTK 4のキーイベント処理
+        // GTK 4 key event handling
         let keyController = new Gtk.EventControllerKey();
         dialog.add_controller(keyController);
         
@@ -200,12 +219,12 @@ function showKeybindingDialog(parent, settings, key, label) {
             console.log(`Key pressed: ${keyval}, state: ${state}`);
             let mask = state & Gtk.accelerator_get_default_mod_mask();
             
-            // EscapeやReturnキーは通常の処理を行う
+            // Allow normal processing for Escape and Return keys
             if (mask === 0 && (keyval === Gdk.KEY_Escape || keyval === Gdk.KEY_Return)) {
                 return false;
             }
 
-            // 修飾キーと通常キーの組み合わせの場合
+            // Handle combination of modifier keys and normal keys
             if (keyval !== 0 && mask !== 0) {
                 newShortcut = Gtk.accelerator_name(keyval, mask);
                 shortcutLabel.set_text(newShortcut);
@@ -216,7 +235,7 @@ function showKeybindingDialog(parent, settings, key, label) {
             return false;
         });
 
-        // ボタンイベント
+        // Button events
         cancelButton.connect('clicked', () => {
             dialog.destroy();
         });
@@ -233,11 +252,64 @@ function showKeybindingDialog(parent, settings, key, label) {
             dialog.destroy();
         });
 
-        // ダイアログを表示
+        // Display dialog
         dialog.present();
         console.log('Dialog presented');
         
     } catch (error) {
         console.error(`Error in showKeybindingDialog: ${error}`);
     }
+}
+
+function createDebugRow(settings) {
+    let row = new Gtk.Box({
+        orientation: Gtk.Orientation.HORIZONTAL,
+        spacing: 10,
+        margin_bottom: 10,
+    });
+
+    // Label section
+    let labelBox = new Gtk.Box({
+        orientation: Gtk.Orientation.VERTICAL,
+        spacing: 2,
+        hexpand: true,
+    });
+
+    let titleLabel = new Gtk.Label({
+        label: _('Enable Debug Mode'),
+        halign: Gtk.Align.START,
+        use_markup: true,
+    });
+
+    let descLabel = new Gtk.Label({
+        label: _('Show debug logs and notifications'),
+        halign: Gtk.Align.START,
+        wrap: true,
+    });
+
+    labelBox.append(titleLabel);
+    labelBox.append(descLabel);
+
+    // Checkbox
+    let debugSwitch = new Gtk.Switch({
+        valign: Gtk.Align.CENTER,
+    });
+
+    // Reflect current settings
+    debugSwitch.set_active(settings.get_boolean('debug'));
+
+    // Switch state change event handler
+    debugSwitch.connect('notify::active', () => {
+        settings.set_boolean('debug', debugSwitch.get_active());
+    });
+
+    // Settings change event handler
+    settings.connect('changed::debug', () => {
+        debugSwitch.set_active(settings.get_boolean('debug'));
+    });
+
+    row.append(labelBox);
+    row.append(debugSwitch);
+
+    return row;
 }
