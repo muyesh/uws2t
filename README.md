@@ -21,6 +21,8 @@ UltraWideSnapperTwoThirds enhances your multitasking experience on ultra-wide mo
 - **Left 1/3**: Position window on the left side with 1/3 screen width
 - **Right 1/3**: Position window on the right side with 1/3 screen width
 
+![UltraWideSnapperTwoThirds Demo](uws2t_demo.gif)
+
 **Supported Environment:**
 - Ubuntu 22.04 (and compatible distributions)
 - GNOME Shell 42.x
@@ -85,9 +87,7 @@ gnome-extensions list --enabled | grep uws2t
 
 ## Features
 
-<video src="uws2t_demo.webm" controls width="800">
-  Your browser does not support the video tag.
-</video>
+
 
 ### Window Positioning Functions
 
