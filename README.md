@@ -21,7 +21,7 @@ UltraWideSnapperTwoThirds enhances your multitasking experience on ultra-wide mo
 - **Left 1/3**: Position window on the left side with 1/3 screen width
 - **Right 1/3**: Position window on the right side with 1/3 screen width
 
-![UltraWideSnapperTwoThirds Demo](uws2t_demo.gif)
+![UltraWideSnapperTwoThirds Demo](docs/uws2t_demo.gif)
 
 **Supported Environment:**
 - Ubuntu 22.04 (and compatible distributions)
@@ -85,10 +85,6 @@ Check if the extension is enabled:
 gnome-extensions list --enabled | grep uws2t
 ```
 
-## Features
-
-
-
 ### Window Positioning Functions
 
 | Function | Default Shortcut | Description |
@@ -113,6 +109,8 @@ You can customize keyboard shortcuts through the extension preferences:
 ```bash
 gnome-extensions prefs uws2t@muyesh.github.io
 ```
+
+![Configuration Panel](docs/config_panel.png)
 
 ## Installation & Build
 

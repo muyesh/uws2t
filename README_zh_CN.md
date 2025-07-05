@@ -110,6 +110,8 @@ gnome-extensions list --enabled | grep uws2t
 gnome-extensions prefs uws2t@muyesh.github.io
 ```
 
+![配置面板](docs/config_panel.png)
+
 ## 安装与构建
 
 ### 构建系统

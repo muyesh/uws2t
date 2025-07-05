@@ -110,6 +110,8 @@ Bạn có thể tùy chỉnh phím tắt thông qua tùy chọn tiện ích:
 gnome-extensions prefs uws2t@muyesh.github.io
 ```
 
+![Bảng cấu hình](docs/config_panel.png)
+
 ## Cài đặt & Xây dựng
 
 ### Hệ thống xây dựng
