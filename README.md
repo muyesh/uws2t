@@ -1,3 +1,13 @@
+## Languages / 言語 / 语言 / 語言 / Ngôn ngữ / 언어
+
+- [English](README.md)
+- [日本語](README_ja.md)
+- [简体中文](README_zh_CN.md)
+- [繁體中文](README_zh_TW.md)
+- [繁體中文（香港）](README_zh_HK.md)
+- [Tiếng Việt](README_vi.md)
+- [한국어](README_ko.md)
+
 # UltraWideSnapperTwoThirds
 
 A GNOME Shell extension designed for 21:9 ultra-wide monitor users to efficiently arrange windows using keyboard shortcuts. This extension allows you to quickly position windows in 2/3 or 1/3 sections of the screen, either left or right aligned, maximizing your productivity and making full use of your monitor's width.
@@ -74,6 +84,10 @@ gnome-extensions list --enabled | grep uws2t
 ```
 
 ## Features
+
+<video src="uws2t_demo.webm" controls width="800">
+  Your browser does not support the video tag.
+</video>
 
 ### Window Positioning Functions
 

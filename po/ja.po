@@ -79,6 +79,18 @@ msgstr "キャンセル"
 msgid "Clear"
 msgstr "クリア"
 
+#: prefs.js:48
+msgid "Debug Settings"
+msgstr "デバッグ設定"
+
+#: prefs.js:260
+msgid "Enable Debug Mode"
+msgstr "デバッグモードを有効にする"
+
+#: prefs.js:266
+msgid "Show debug logs and notifications"
+msgstr "デバッグログと通知を表示する"
+
 #: extension.js:110 extension.js:130 extension.js:169
 msgid "Error"
 msgstr "エラー"
@@ -98,3 +110,23 @@ msgstr "ウィンドウ情報"
 #: extension.js:168 extension.js:169
 msgid "Failed to get window information"
 msgstr "ウィンドウ情報の取得に失敗しました"
+
+#: extension.js:175
+msgid "Left"
+msgstr "左"
+
+#: extension.js:175
+msgid "Right"
+msgstr "右"
+
+#: extension.js:177
+msgid "Window"
+msgstr "ウィンドウ"
+
+#: extension.js:178
+msgid "Work Area"
+msgstr "作業領域"
+
+#: extension.js:179
+msgid "Position"
+msgstr "配置位置"

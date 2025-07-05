@@ -79,6 +79,18 @@ msgstr "취소"
 msgid "Clear"
 msgstr "지우기"
 
+#: prefs.js:48
+msgid "Debug Settings"
+msgstr "디버그 설정"
+
+#: prefs.js:260
+msgid "Enable Debug Mode"
+msgstr "디버그 모드 활성화"
+
+#: prefs.js:266
+msgid "Show debug logs and notifications"
+msgstr "디버그 로그 및 알림 표시"
+
 #: extension.js:110 extension.js:130 extension.js:169
 msgid "Error"
 msgstr "오류"
@@ -98,3 +110,23 @@ msgstr "창 정보"
 #: extension.js:168 extension.js:169
 msgid "Failed to get window information"
 msgstr "창 정보를 가져오는데 실패했습니다"
+
+#: extension.js:175
+msgid "Left"
+msgstr "왼쪽"
+
+#: extension.js:175
+msgid "Right"
+msgstr "오른쪽"
+
+#: extension.js:177
+msgid "Window"
+msgstr "창"
+
+#: extension.js:178
+msgid "Work Area"
+msgstr "작업 영역"
+
+#: extension.js:179
+msgid "Position"
+msgstr "위치"

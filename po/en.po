@@ -79,6 +79,18 @@ msgstr "Cancel"
 msgid "Clear"
 msgstr "Clear"
 
+#: prefs.js:48
+msgid "Debug Settings"
+msgstr "Debug Settings"
+
+#: prefs.js:260
+msgid "Enable Debug Mode"
+msgstr "Enable Debug Mode"
+
+#: prefs.js:266
+msgid "Show debug logs and notifications"
+msgstr "Show debug logs and notifications"
+
 #: extension.js:110 extension.js:130 extension.js:169
 msgid "Error"
 msgstr "Error"
@@ -98,3 +110,23 @@ msgstr "Window Information"
 #: extension.js:168 extension.js:169
 msgid "Failed to get window information"
 msgstr "Failed to get window information"
+
+#: extension.js:175
+msgid "Left"
+msgstr "Left"
+
+#: extension.js:175
+msgid "Right"
+msgstr "Right"
+
+#: extension.js:177
+msgid "Window"
+msgstr "Window"
+
+#: extension.js:178
+msgid "Work Area"
+msgstr "Work Area"
+
+#: extension.js:179
+msgid "Position"
+msgstr "Position"

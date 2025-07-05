@@ -79,6 +79,18 @@ msgstr "取消"
 msgid "Clear"
 msgstr "清除"
 
+#: prefs.js:48
+msgid "Debug Settings"
+msgstr "调试设置"
+
+#: prefs.js:260
+msgid "Enable Debug Mode"
+msgstr "启用调试模式"
+
+#: prefs.js:266
+msgid "Show debug logs and notifications"
+msgstr "显示调试日志和通知"
+
 #: extension.js:110 extension.js:130 extension.js:169
 msgid "Error"
 msgstr "错误"
@@ -98,3 +110,23 @@ msgstr "窗口信息"
 #: extension.js:168 extension.js:169
 msgid "Failed to get window information"
 msgstr "获取窗口信息失败"
+
+#: extension.js:175
+msgid "Left"
+msgstr "左侧"
+
+#: extension.js:175
+msgid "Right"
+msgstr "右侧"
+
+#: extension.js:177
+msgid "Window"
+msgstr "窗口"
+
+#: extension.js:178
+msgid "Work Area"
+msgstr "工作区域"
+
+#: extension.js:179
+msgid "Position"
+msgstr "位置"

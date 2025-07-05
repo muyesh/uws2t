@@ -1,3 +1,13 @@
+## 言語 / Languages / 语言 / 語言 / Ngôn ngữ / 언어
+
+- [English](README.md)
+- [日本語](README_ja.md)
+- [简体中文](README_zh_CN.md)
+- [繁體中文](README_zh_TW.md)
+- [繁體中文（香港）](README_zh_HK.md)
+- [Tiếng Việt](README_vi.md)
+- [한국어](README_ko.md)
+
 # UltraWideSnapperTwoThirds
 
 21:9ウルトラワイドモニターユーザー向けに設計されたGNOME Shell拡張機能です。キーボードショートカットを使用してウィンドウを効率的に配置し、画面の2/3または1/3のセクションに左右どちらかに配置できます。生産性を最大化し、モニターの幅を最大限に活用できます。

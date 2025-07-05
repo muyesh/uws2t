@@ -26,5 +26,11 @@
       <description>ウィンドウを画面の左側に1/3の幅で配置するショートカットキー</description>
     </key>
     
+    <key name="debug" type="b">
+      <default>false</default>
+      <summary>デバッグモード</summary>
+      <description>デバッグログの出力と通知を有効にする</description>
+    </key>
+    
   </schema>
 </schemalist>
