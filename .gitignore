@@ -1,0 +1,111 @@
+# Build outputs
+build/
+dist/
+
+# Compiled translation files (.mo files are generated from .po files)
+*.mo
+locale/*/LC_MESSAGES/*.mo
+
+# Compiled GSettings schemas
+schemas/gschemas.compiled
+
+# Distribution packages
+*.zip
+
+# Temporary files
+*~
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+*.kate-swp
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+
+# Node.js (if used for development tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if used for development tools)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Local development files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Generated documentation
+docs/build/
+
+# Test coverage
+coverage/
+*.lcov
+
+# Backup files created by text editors
+*~
+*.backup
+*.swp
+*.swo
+
+# Files that might contain sensitive information
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Local configuration files that shouldn't be shared
+local.conf
+*.local
+
+# Compiled binary files
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Archive files (except source archives)
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.rar
+*.7z
+
+# Exclude everything in build directory but keep the directory structure
+build/*
+!build/.gitkeep
+
+# Exclude distribution files
+dist/*
+!dist/.gitkeep

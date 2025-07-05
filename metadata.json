@@ -1,0 +1,10 @@
+{
+    "uuid": "uws2t@muyesh.github.io",
+    "name": "UltraWideSnapperTwoThirds",
+    "description": "This GnomeShell extension allows users of 21:9 ultra-wide monitors to quickly arrange windows using keyboard shortcuts into either 2/3 or 1/3 sections of the screen, left or right. Enhance your multitasking and productivity by making full use of your monitor's width.",
+    "version": "0.1.0",
+    "shell-version": [ "42" ],
+    "url": "https://github.com/muyesh/uws2t",
+    "settings-schema": "org.gnome.shell.extensions.uws2t",
+    "gettext-domain": "uws2t"
+}

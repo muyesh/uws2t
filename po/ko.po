@@ -1,0 +1,100 @@
+# Korean translations for window-3split package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the window-3split package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: window-3split\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-05 16:25+0900\n"
+"PO-Revision-Date: 2025-01-05 16:26+0900\n"
+"Last-Translator: \n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: prefs.js:20
+msgid "Keyboard Shortcut Settings"
+msgstr "키보드 단축키 설정"
+
+#: prefs.js:26
+msgid "Configure shortcut keys for each function"
+msgstr "각 기능의 단축키를 설정합니다"
+
+#: prefs.js:31
+msgid "Left 2/3"
+msgstr "왼쪽 2/3"
+
+#: prefs.js:31
+msgid "Place window on the left side with 2/3 width"
+msgstr "창을 화면 왼쪽에 2/3 너비로 배치"
+
+#: prefs.js:32
+msgid "Right 2/3"
+msgstr "오른쪽 2/3"
+
+#: prefs.js:32
+msgid "Place window on the right side with 2/3 width"
+msgstr "창을 화면 오른쪽에 2/3 너비로 배치"
+
+#: prefs.js:33
+msgid "Right 1/3"
+msgstr "오른쪽 1/3"
+
+#: prefs.js:33
+msgid "Place window on the right side with 1/3 width"
+msgstr "창을 화면 오른쪽에 1/3 너비로 배치"
+
+#: prefs.js:34
+msgid "Left 1/3"
+msgstr "왼쪽 1/3"
+
+#: prefs.js:34
+msgid "Place window on the left side with 1/3 width"
+msgstr "창을 화면 왼쪽에 1/3 너비로 배치"
+
+#: prefs.js:73 prefs.js:137
+msgid "Set"
+msgstr "설정"
+
+#: prefs.js:88 prefs.js:119
+msgid "Not Set"
+msgstr "설정 안됨"
+
+#: prefs.js:100
+msgid "Set Shortcut Key"
+msgstr "단축키 설정"
+
+#: prefs.js:115
+msgid "Press the new shortcut key"
+msgstr "새 단축키를 누르세요"
+
+#: prefs.js:129
+msgid "Cancel"
+msgstr "취소"
+
+#: prefs.js:133
+msgid "Clear"
+msgstr "지우기"
+
+#: extension.js:110 extension.js:130 extension.js:169
+msgid "Error"
+msgstr "오류"
+
+#: extension.js:110
+msgid "No focused window found"
+msgstr "포커스된 창을 찾을 수 없습니다"
+
+#: extension.js:130
+msgid "This window cannot be resized"
+msgstr "이 창은 크기를 조정할 수 없습니다"
+
+#: extension.js:165
+msgid "Window Information"
+msgstr "창 정보"
+
+#: extension.js:168 extension.js:169
+msgid "Failed to get window information"
+msgstr "창 정보를 가져오는데 실패했습니다"

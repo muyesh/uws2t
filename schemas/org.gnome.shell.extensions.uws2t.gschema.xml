@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.uws2t" path="/org/gnome/shell/extensions/uws2t/">
+    
+    <key name="left-two-thirds" type="as">
+      <default>['&lt;Ctrl&gt;&lt;Super&gt;Left']</default>
+      <summary>左寄せ2/3のショートカット</summary>
+      <description>ウィンドウを画面の左側に2/3の幅で配置するショートカットキー</description>
+    </key>
+    
+    <key name="right-two-thirds" type="as">
+      <default>['&lt;Ctrl&gt;&lt;Shift&gt;&lt;Super&gt;Right']</default>
+      <summary>右寄せ2/3のショートカット</summary>
+      <description>ウィンドウを画面の右側に2/3の幅で配置するショートカットキー</description>
+    </key>
+    
+    <key name="right-one-third" type="as">
+      <default>['&lt;Ctrl&gt;&lt;Super&gt;Right']</default>
+      <summary>右寄せ1/3のショートカット</summary>
+      <description>ウィンドウを画面の右側に1/3の幅で配置するショートカットキー</description>
+    </key>
+    
+    <key name="left-one-third" type="as">
+      <default>['&lt;Ctrl&gt;&lt;Shift&gt;&lt;Super&gt;Left']</default>
+      <summary>左寄せ1/3のショートカット</summary>
+      <description>ウィンドウを画面の左側に1/3の幅で配置するショートカットキー</description>
+    </key>
+    
+  </schema>
+</schemalist>
